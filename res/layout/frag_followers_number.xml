@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_accumulated_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_frag_FanNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="实时粉丝数"
+        android:textColor="#555555"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tv_frag_accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="帐号名"
+        android:textColor="#555555"
+        android:textSize="38sp" />
+
+    <Button
+        android:id="@+id/btn_frag_switchAccnt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_blue_dark"
+        android:text="切换帐号"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_frag_FanNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="--"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_frag_FanNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="+3000"
+        android:textColor="#FF0000"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/btn_frag_shortNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_frag_FanNumber"
+        android:layout_centerHorizontal="true"
+        android:text="(25万8千3百21)"
+        android:textColor="#555555"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_frag_offset"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null" />
+
+</RelativeLayout>
